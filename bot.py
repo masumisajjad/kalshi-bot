@@ -9,7 +9,8 @@ if "\\n" in RAW:                       # convert \n escapes if needed
     RAW = RAW.replace("\\n", "\n")
 
 PRIVATE = serialization.load_pem_private_key(RAW.encode(), password=None)
-BASE    = "https://demo-api.kalshi.co"   # prod host: https://api.elections.kalshi.com
+BASE = "https://api.elections.kalshi.com"
+   # prod host: https://api.elections.kalshi.com
 
 def _sig(ts, m, p):
     msg = f"{ts}{m}{p}".encode()
