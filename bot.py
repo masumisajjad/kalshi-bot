@@ -1,6 +1,7 @@
 import os, time, base64, requests, schedule
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
+print("🚀 Bot starting …", flush=True)
 
 KEY_ID = os.getenv("KALSHI_KEY_ID")
 RAW    = os.getenv("KALSHI_PRIVATE_KEY")
