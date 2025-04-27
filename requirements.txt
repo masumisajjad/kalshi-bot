@@ -1,3 +1,9 @@
+fastapi
+uvicorn[standard]
+apscheduler
+sqlmodel
+pandas
+python-dotenv      # local secrets
 cryptography
 requests
-schedule
+aiohttp            # async HTTP to Kalshi
